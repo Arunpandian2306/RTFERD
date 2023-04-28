@@ -8,13 +8,13 @@ from keras.preprocessing import image
 #import pyttsx3
 
 # Load the pre-trained model
-classifier = load_model(r'C:\Users\arun7\Downloads\Facial Emotion Recognition and Detection\pages\model1.h5')
+classifier = load_model(r'RTFERD/pages/model1.h5')
 
 # Define the labels for the emotions
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
 # Define the face classifier
-face_classifier = cv2.CascadeClassifier(r'C:\Users\arun7\Downloads\Facial Emotion Recognition and Detection\pages\haarcascade_frontalface_default.xml')
+face_classifier = cv2.CascadeClassifier(r'RTFERD/pages/haarcascade_frontalface_default.xml')
 
 # Define the Streamlit app title
 st.set_page_config(page_title='Real Time-Facial Emotion Recognition and Detection', page_icon=':smiley:')
